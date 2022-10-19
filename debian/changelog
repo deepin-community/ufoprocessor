@@ -1,0 +1,51 @@
+ufoprocessor (1.9.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control:
+    + Use "Rules-Requires-Root: no".
+    + Bump Standards-Version to 4.6.0.
+    + Bump debhelper compat to v13.
+    + Use dh-sequence-python3 to replace dh-python.
+  * debian/rules: Use dh13 syntax.
+  * debian/watch: Correct monitoring URL as suggested by uscan
+    manpage.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 07 Nov 2021 08:39:29 -0500
+
+ufoprocessor (1.9.0-1) unstable; urgency=medium
+
+  * New upstream version 1.9.0
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Sun, 07 Jun 2020 12:51:45 +0800
+
+ufoprocessor (1.08-2) unstable; urgency=medium
+
+  * d/tests/control: Add custom test command
+  * d/control: Remove autopkgtest-pkg-python Testsuite
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Mon, 02 Mar 2020 21:42:51 +0800
+
+ufoprocessor (1.08-1) unstable; urgency=medium
+
+  * New upstream version 1.08
+  * d/control: Bump Standards-Version to 4.5.0; No changes has been made in
+    this regard
+  * d/salsa-ci.yml: Add CI script for salsa.debian.org
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Mon, 02 Mar 2020 21:13:58 +0800
+
+ufoprocessor (1.0.6-2) unstable; urgency=medium
+
+  * Team upload.
+  * Source-only upload to allow testing migration.
+  * debian/control:
+    + Bump Standards-Version to 4.4.1.
+    + Bump debhelper compat to v12.
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 25 Dec 2019 19:32:13 -0500
+
+ufoprocessor (1.0.6-1) unstable; urgency=medium
+
+  * Initial release (Closes: #926090)
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Thu, 18 Jul 2019 10:59:29 -0300

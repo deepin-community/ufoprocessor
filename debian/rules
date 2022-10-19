@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+export PYBUILD_NAME=ufoprocessor
+
+%:
+	dh $@ --buildsystem=pybuild
+
+execute_after_dh_auto_clean:
+	rm Lib/ufoProcessor/_version.py

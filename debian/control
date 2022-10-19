@@ -1,0 +1,29 @@
+Source: ufoprocessor
+Section: devel
+Priority: optional
+Maintainer: Debian Fonts Task Force <debian-fonts@lists.debian.org>
+Uploaders: Yao Wei (魏銘廷) <mwei@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ python3-all,
+ python3-setuptools,
+ python3-setuptools-scm,
+ python3-defcon (>= 0.6.0),
+ python3-fontmath (>= 0.4.9),
+ python3-fontparts (>= 0.8.2),
+ python3-fonttools (>= 3.32.0),
+ python3-mutatormath (>= 2.1.2),
+Rules-Requires-Root: no
+Standards-Version: 4.6.0
+Homepage: https://github.com/LettError/ufoProcessor
+Vcs-Browser: https://salsa.debian.org/fonts-team/ufoprocessor
+Vcs-Git: https://salsa.debian.org/fonts-team/ufoprocessor.git
+
+Package: python3-ufoprocessor
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Process and generate Unified Font Object (UFO) files
+ Python package based on the designSpaceDocument from fontTools.designspaceLib
+ specifically to process and generate instances for UFO files, glyphs and other
+ data.
